@@ -1,0 +1,10 @@
+<div class="row">
+  <h1 class="pageHeader">Current Events</h1>
+  <div class="col-md-9">
+    <div *ngFor="let event of events" (click)="goToDetailPage(event)" class="panel panel-default">
+      <div class="panel-body">
+        <h3><span class="currentTitle"><strong>{{event.title}}</strong></span> By <span class="currentAuthor"><em>{{event.author}}</em></span></h3>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<h1 class="pageHeader">Add Event</h1>
+<div class="addBody">
+  <form>
+    <div class="form-group">
+      <input #eventTitle placeholder=Title>
+    </div>
+    <div class="form-group">
+      <input #eventAuthor placeholder=Author>
+    </div>
+    <div class="form-group">
+      <textarea #eventContent placeholder=Content></textarea>
+    </div>
+    <div class="form-group">
+      <input #eventImage placeholder=Image>
+    </div>
+    <div class="form-group">
+      <select #eventType>
+        <option value="Social">Social</option>
+        <option value="Tech">Tech</option>
+      </select>
+    </div>
+    <button type="submit" name="button" (click)="addEvent(eventTitle.value, eventAuthor.value, eventContent.value, eventImage.value, eventType.value); eventTitle.value=''; eventAuthor.value=''; eventContent.value=''; eventImage.value='';">Enter</button>
+  </form>
+</div>

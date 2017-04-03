@@ -1,0 +1,11 @@
+<div class="eventDisplay">
+  <h1 class="eventTitle jumbotron">{{eventToDisplay.title}}</h1>
+  <div class="eventImage">
+    <img src={{eventToDisplay.image}} alt="event"/>
+  </div>
+  <div class="eventBody">
+    <h4 class="eventAuthor">By {{eventToDisplay.author}}</h4>
+    <h4 class="eventContent">{{eventToDisplay.content}}</h4>
+  </div>
+  <button type="button" (click)="goToEditPage(eventToDisplay)" name="button">Edit</button>
+</div>

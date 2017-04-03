@@ -1,0 +1,22 @@
+<h1 class="pageHeader">Editing {{eventToEdit.title}}...</h1>
+<div class="editBody">
+  <form>
+    <div class="form-group">
+      <label for="">Title</label>
+      <input #eventTitle value={{eventToEdit.title}}>
+    </div>
+    <div class="form-group">
+      <label for="">Author</label>
+      <input #eventAuthor value={{eventToEdit.author}}>
+    </div>
+    <div class="form-group">
+      <label for="">Content</label>
+      <textarea #eventContent value={{eventToEdit.content}}></textarea>
+    </div>
+    <div class="form-group">
+      <label for="">Image</label>
+      <input #eventImage value={{eventToEdit.image}}>
+    </div>
+    <button type="submit" name="button" (click)="editEvent(eventTitle.value, eventAuthor.value, eventContent.value, eventImage.value)">Enter</button>
+  </form>
+</div>

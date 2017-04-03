@@ -1,0 +1,28 @@
+.jumbotron {
+  background-color: #1485CC;
+  color: #EEEDBA;
+}
+
+.eventTitle {
+  text-align: center;
+  font-size: 80px;
+}
+
+.eventImage {
+  text-align: center;
+  height: 350px;
+}
+
+.eventAuthor {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.eventContent {
+  text-align: center;
+  font-size: 18px;
+}
+
+.eventBody {
+  margin-top: 200px;
+}
